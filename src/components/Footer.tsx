@@ -59,10 +59,10 @@ export default function Footer() {
 
           {/* Newsletter */}
           <div className="w-full flex flex-col items-start md:items-end gap-3">
-            <h3 className="text-[10px] font-bold uppercase tracking-[0.2em] opacity-40">Updates</h3>
+            <h3 className="text-[10px] font-bold uppercase tracking-[0.2em] opacity-70">Updates</h3>
             {!isExpanded ? (
               <button type="button" onClick={() => setIsExpanded(true)} aria-label="Open updates signup form" aria-expanded={isExpanded} aria-controls="updates-signup-form" className="w-40 px-3 flex items-center justify-center bg-[var(--surface)] border border-[var(--border)] rounded-lg py-3 hover:bg-[var(--border)] transition-all duration-500 group">
-                <span className="text-[10px] font-bold uppercase tracking-[0.2em] opacity-60 group-hover:opacity-100 transition-opacity">Stay Tuned</span>
+                <span className="text-[10px] font-bold uppercase tracking-[0.2em] opacity-90 group-hover:opacity-100 transition-opacity">Stay Tuned</span>
               </button>
             ) : (
               <div id="updates-signup-form" className="w-full sm:w-72 px-4 flex items-center bg-[var(--surface)] border border-[var(--accent)] rounded-lg transition-all duration-500">
@@ -78,7 +78,7 @@ export default function Footer() {
 
           {/* Community */}
           <div className="flex flex-col items-start md:items-end gap-3">
-            <h3 className="text-[10px] font-bold uppercase tracking-[0.2em] opacity-40">Community</h3>
+            <h3 className="text-[10px] font-bold uppercase tracking-[0.2em] opacity-70">Community</h3>
             <div className="flex items-center gap-3">
               {[
                 { href: "https://github.com/magic-peach/reframe", icon: <Github size={18} />, label: "GitHub", tooltip: "Star us on GitHub" },
@@ -88,7 +88,7 @@ export default function Footer() {
               ].map((social) => (
                 <div key={social.label} className="relative group">
                   <a href={social.href} target="_blank" rel="noopener" aria-label={social.label} className="p-2.5 rounded-lg border border-[var(--border)] bg-[var(--surface)] hover:border-[var(--accent)] hover:bg-[var(--accent-muted)] transition-all duration-200 hover:-translate-y-1 active:scale-95 flex items-center justify-center">
-                    <span className="opacity-70 group-hover:opacity-100 transition-opacity duration-200">{social.icon}</span>
+                    <span className="opacity-90 group-hover:opacity-100 transition-opacity duration-200">{social.icon}</span>
                   </a>
                   <span className="absolute -top-9 left-1/2 -translate-x-1/2 bg-[var(--text)] text-[var(--bg)] text-[9px] font-bold uppercase tracking-widest px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap pointer-events-none">
                     {social.tooltip}
